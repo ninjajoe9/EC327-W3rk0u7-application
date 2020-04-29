@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/exerciselist"
+        android:layout_width="414dp"
+        android:layout_height="198dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/setstext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/repspicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/completeadd"
+        app:layout_constraintEnd_toStartOf="@id/pickweight"
+        app:layout_constraintStart_toEndOf="@+id/setspicker"
+        app:layout_constraintTop_toBottomOf="@+id/repstext"></NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/setspicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/completeadd"
+        app:layout_constraintEnd_toStartOf="@+id/repspicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setstext"></NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/pickweight"
+        android:layout_width="136dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/completeadd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/repspicker"></NumberPicker>
+
+    <Button
+        android:id="@+id/completeadd"
+        android:layout_width="402dp"
+        android:layout_height="49dp"
+        android:text="@string/add_exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repspicker"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/setstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sets"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/setspicker"
+        app:layout_constraintEnd_toStartOf="@+id/repstext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciselist" />
+
+    <TextView
+        android:id="@+id/repstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reps"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/repspicker"
+        app:layout_constraintEnd_toStartOf="@id/weightstext"
+        app:layout_constraintStart_toEndOf="@+id/setstext"
+        app:layout_constraintTop_toBottomOf="@+id/exerciselist" />
+
+    <TextView
+        android:id="@+id/weightstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/pickweight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/repstext"
+        app:layout_constraintTop_toBottomOf="@+id/exerciselist"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_exercises_to_add_to_the_workout"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redbg"
+    tools:context=".LoadWorkout">
+
+    <Button
+        android:id="@+id/startworkout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_workout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteworkout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciselist" />
+
+    <ListView
+        android:id="@+id/exerciselist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:listSelector="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/startworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteworkout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_workout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startworkout"
+        app:layout_constraintTop_toBottomOf="@+id/exerciselist" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/manageexercises"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:text="@string/manage_exercises"
+        app:layout_constraintBottom_toTopOf="@+id/startnewworkout"
+        app:layout_constraintEnd_toEndOf="@id/startnewworkout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loadworkout"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="65dp"
+        android:background="#FFFFFF"
+        android:text="@string/existing_workouts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startnewworkout" />
+
+    <Button
+        android:id="@+id/startnewworkout"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="455dp"
+        android:background="#FFFFFF"
+        android:text="@string/create_new_workout"
+        app:layout_constraintBottom_toTopOf="@+id/loadworkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="276dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toTopOf="@+id/manageexercises"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

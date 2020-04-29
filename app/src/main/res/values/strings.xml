@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WorkoutApp</string>
+    <string name="manage_exercises">Manage Exercises</string>
+    <string name="start_new_workout">Start New Workout</string>
+    <string name="load_workout">Load Workout</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="exercise_name_prompt">Exercise Name</string>
+    <string name="error_exercise_name">Error! Please enter a name.</string>
+    <string name="add_exercise_confirmation">New exercise has been created.</string>
+    <string name="add_exercise_bad_chars">Please only use letters and spaces.</string>
+    <string name="general_error">Sorry, something went wrong.</string>
+    <string name="remove_exercise">Remove Exercise</string>
+    <string name="start_workout">Start Workout</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="weight">Weight</string>
+    <string name="finish_workout">Finish Workout</string>
+    <string name="delete_exercise">Delete Exercise</string>
+    <string name="delete_workout">Delete Workout</string>
+    <string name="enter_name">Enter a name from your workout</string>
+    <string name="congrats">Congratulations!</string>
+    <string name="workout_complete">Workout Complete!</string>
+    <string name="home_screen">Back To Home Screen</string>
+    <string name="rating">Rate your Workout</string>
+    <string name="list_workouts">Pick a workout</string>
+    <string name="type_here">Type here</string>
+    <string name="list">Exercises in your workout</string>
+    <string name="create_new_workout">Create New Workout</string>
+    <string name="existing_workouts">Existing Workouts</string>
+    <string name="image">image</string>
+    <string name="choose_exercises_to_add_to_the_workout">Choose Exercises to Add to the Workout</string>
+    <string name="name_of_workout">Name of Workout</string>
+
+</resources>
